@@ -12,11 +12,10 @@ export default function Page() {
             justifyContent: 'center',
             alignItems: 'center',
             padding: '20px 40px',
-
             border: '1px solid #a8a8a8',
             flexDirection: 'column'
         }}>
-               <h1 style={{textTransform: "capitalize", color: '#A31C88', marginTop: 0, }}>Site Bientôt En Ligne</h1>
+               <h1 style={{textTransform: "capitalize", color: '#A31C88', marginTop: 0, fontSize: '1.7rem'}}>Site Bientôt En Ligne</h1>
 
                   <div >
             <div style={{ width: '100%', textAlign: 'center', margin: '10px 0'}}>

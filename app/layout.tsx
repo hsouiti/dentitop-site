@@ -20,9 +20,8 @@ const ubuntu = Ubuntu({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={ubuntu.className}>
-      <body>
-        <div className="main" style={{display: 'flex', justifyContent: "center", }}>
-
+      <body style={{height: "100vh"}}>
+        <div className="main" style={{display: 'flex', height: '100%', justifyContent: "center",alignItems: 'center' }}>
         {children}
         </div>
         </body>
