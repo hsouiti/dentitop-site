@@ -11,19 +11,20 @@ export default function Page() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '20px 60px',
+            padding: '20px 40px',
+
             border: '1px solid #a8a8a8',
             flexDirection: 'column'
         }}>
-               <h1 style={{textTransform: "capitalize", color: '#A31C88'}}>Site Bientôt En Ligne</h1>
+               <h1 style={{textTransform: "capitalize", color: '#A31C88', marginTop: 0, }}>Site Bientôt En Ligne</h1>
 
                   <div >
-            <div style={{ width: '100%', textAlign: 'center', margin: '20px 0'}}>
+            <div style={{ width: '100%', textAlign: 'center', margin: '10px 0'}}>
                   <Image
                   src={Logiciel}
                   alt="Dentitop"
-                  width={300} 
-                  // height={500} automatically provided
+                  width={250} 
+                   height={250}
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                   />
