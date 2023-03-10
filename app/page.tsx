@@ -30,7 +30,8 @@ export default function Page() {
       </div>
                   <h2 style={{margin: 0,  }}>Dentitop</h2>
                   <h3 style={{fontWeight: '400', marginTop: '10px', marginBottom: 0 }}>Un logiciel dentaire moderne et complet </h3>
-                  <h4 style={{fontWeight: '500', marginTop: '10px' }}>Contact: 06 01 37 11 24 - dentitop1@gmail.com</h4>
+                  <h4 style={{fontWeight: '500', marginTop: '10px', marginBottom: 0 }}>Phone : 06 01 37 11 24</h4>
+                  <h4 style={{fontWeight: '500', marginTop: '5px' }}>Email : dentitop1@gmail.com</h4>
                   <p style={{color: '#A31C88', fontSize: '1rem', fontWeight: 500}}>Facile d'utilisation, Ergonomique, evolutif en permanence</p>
                 <Link
                   style={{
