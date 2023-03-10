@@ -11,7 +11,7 @@ export default function Page() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '20px 40px',
+            padding: '20px 5%',
             border: '1px solid #a8a8a8',
             flexDirection: 'column'
         }}>
