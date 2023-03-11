@@ -15,7 +15,7 @@ export default function Page() {
             border: '1px solid #a8a8a8',
             flexDirection: 'column'
         }}>
-               <h1 style={{textTransform: "capitalize", color: '#A31C88', marginTop: 0, fontSize: '1.7rem'}}>Site Bientôt En Ligne</h1>
+               <h1 style={{ color: '#A31C88', marginTop: 0, fontSize: '1.7rem'}}>Site bientôt en ligne</h1>
 
                   <div >
             <div style={{ width: '100%', textAlign: 'center', margin: '10px 0'}}>
@@ -27,7 +27,7 @@ export default function Page() {
                   // blurDataURL="data:..." automatically provided
                   // placeholder="blur" // Optional blur-up while loading
                   />
-      </div>
+              </div>
                   <h2 style={{margin: 0,  }}>Dentitop</h2>
                   <h3 style={{fontWeight: '400', marginTop: '10px', marginBottom: 0 }}>Un logiciel dentaire moderne et complet </h3>
                   <h4 style={{fontWeight: '500', marginTop: '10px', marginBottom: 0 }}>Phone : 06 01 37 11 24</h4>
@@ -41,7 +41,8 @@ export default function Page() {
                     color: 'white', 
                     padding: '12px 15px',
                     borderRadius: '8px',
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    textDecoration: 'none'
                 }}
                   href='/brochure-dentitop.pdf'
                   target="_blank"
