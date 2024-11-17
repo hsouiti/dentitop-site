@@ -9,7 +9,7 @@ import { useEffect , useState} from 'react';
 
 
 export default function Page() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
   
   const containerStyle = {
     display: 'flex',
