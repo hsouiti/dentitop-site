@@ -33,11 +33,7 @@ export default function Page() {
     };
   }, []); 
 
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 768; // Example for mobile width
 
-    console.log('isMobile', isMobile)
-  }, [isMobile])
   return (
     <div className="main" style={{
       display: 'flex', 
