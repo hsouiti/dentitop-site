@@ -4,24 +4,52 @@ import Logiciel from '../public/logiciel-gestion-cabinet-dentaire.png';
 import Link from 'next/link';
 
 import { FloatingWhatsApp } from '@carlos8a/react-whatsapp-floating-button';
+import { useEffect , useState} from 'react';
 // https://www.youtube.com/watch?v=L5JU1oR29TM&list=PLwTWj-bA3SMC4fGQhsdYKJQErd0MKHNfD&index=1
 
 
 export default function Page() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: isMobile ? '10px 20px' : '40px 40px', // Mobile: top-bottom 10px, left-right 20px. Desktop: top-bottom 40px, left-right 80px.
+    border: '1px solid #a8a8a8',
+    flexDirection: 'column',
+  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Attach the resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
+
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768; // Example for mobile width
+
+    console.log('isMobile', isMobile)
+  }, [isMobile])
   return (
-    <>
-        <div className="container" style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: '20px 5%',
-            border: '1px solid #a8a8a8',
-            flexDirection: 'column'
-        }}>
+    <div className="main" style={{
+      display: 'flex', 
+      height: '100%', 
+      justifyContent: "center",
+      alignItems:  isMobile ? "flex-start" : "center", 
+    }}>
+        <div style={{...containerStyle, flexDirection: 'column' as 'column'}}>
                <h1 style={{ color: '#A31C88', marginTop: 0, fontSize: '1.7rem'}}>Site bientôt en ligne</h1>
 
                   <div >
-            <div style={{ width: '100%', textAlign: 'center', margin: '10px 0'}}>
+            <div style={{ width: '100%', textAlign: 'center', margin:  '10px 0'}}>
                   <Image
                   src={Logiciel}
                   alt="Dentitop"
@@ -73,7 +101,7 @@ export default function Page() {
   
        
   
-      </>
+      </div>
   );
 }
 
