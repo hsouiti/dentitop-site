@@ -1,8 +1,9 @@
+'use client';
 import Image from 'next/image';
 import Logiciel from '../public/logiciel-gestion-cabinet-dentaire.png';
 import Link from 'next/link';
 
-
+import { FloatingWhatsApp } from '@carlos8a/react-whatsapp-floating-button';
 // https://www.youtube.com/watch?v=L5JU1oR29TM&list=PLwTWj-bA3SMC4fGQhsdYKJQErd0MKHNfD&index=1
 
 
@@ -53,10 +54,21 @@ export default function Page() {
                     Télécharger Brochure Dentitop
                 </Link>
                   </div>
+                  <div>
 
-      
-       
-    
+
+            <FloatingWhatsApp
+              phoneNumber="+212601371124"
+              accountName="Logiciel Dentitop"
+              initialMessageByServer="Bonjour, Comment puis-je vous aider?"
+              initialMessageByClient="Bonjour!  J'aimerais discuter avec vous de......" // Optional
+              statusMessage="Disponible"
+              startChatText="Discuter avec nous"
+              tooltipText="Besoin d'aide ? Cliquez pour discuter !"
+              allowEsc={true}
+              className="whatsapp-button"
+              />
+              </div>
     </div> 
   
        

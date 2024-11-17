@@ -1,5 +1,6 @@
 import { Inter, Roboto, Ubuntu  } from 'next/font/google';
 
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
         <div className="main" style={{display: 'flex', height: '100%', justifyContent: "center",alignItems: 'center' }}>
         {children}
         </div>
+       
         </body>
+ 
     </html>
   );
 }
